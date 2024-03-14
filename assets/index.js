@@ -24,7 +24,7 @@ function ASCData(ascString) {
 
         const varLine = ascLines[i]
           .substring(precedingCharCount)
-          .replace('/##.*/', '')
+          .replace(/##.*/, '')
 
         console.log(varLine)
 
